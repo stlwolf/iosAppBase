@@ -14,6 +14,8 @@
 		C45E6F6B1D1C646100667D54 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6A1D1C646100667D54 /* NSObject+Extension.swift */; };
 		C45E6F6D1D1C65F700667D54 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */; };
 		C45E6F6F1D1C69B500667D54 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */; };
+		C497E1061D1D24D2002161B4 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; };
+		C497E1071D1D24D2002161B4 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C49A18731D1D03AA00128D4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A18721D1D03AA00128D4B /* MainViewController.swift */; };
 		C4D553151D1B1F06006E7299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D553141D1B1F06006E7299 /* AppDelegate.swift */; };
 		C4D5531A1D1B1F06006E7299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D553181D1B1F06006E7299 /* Main.storyboard */; };
@@ -32,6 +34,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C497E1081D1D24D2002161B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C497E1071D1D24D2002161B4 /* Chameleon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C44957E81D1C6E6700641924 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C44957EA1D1C709500641924 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
@@ -40,6 +56,7 @@
 		C45E6F6A1D1C646100667D54 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		C497E1051D1D24D2002161B4 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		C49A18721D1D03AA00128D4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4D553111D1B1F06006E7299 /* appBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D553141D1B1F06006E7299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C497E1061D1D24D2002161B4 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +113,7 @@
 		C4D553081D1B1F06006E7299 = {
 			isa = PBXGroup;
 			children = (
+				C497E1051D1D24D2002161B4 /* Chameleon.framework */,
 				C4D553121D1B1F06006E7299 /* Products */,
 				C4D553131D1B1F06006E7299 /* appBase */,
 				C4D553281D1B1F06006E7299 /* appBaseTests */,
@@ -175,6 +194,8 @@
 				C4D5530D1D1B1F06006E7299 /* Sources */,
 				C4D5530E1D1B1F06006E7299 /* Frameworks */,
 				C4D5530F1D1B1F06006E7299 /* Resources */,
+				C497E1081D1D24D2002161B4 /* Embed Frameworks */,
+				C497E1091D1D2512002161B4 /* Link Carthage Libraries */,
 			);
 			buildRules = (
 			);
@@ -262,6 +283,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C497E1091D1D2512002161B4 /* Link Carthage Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
+			);
+			name = "Link Carthage Libraries";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4D5530D1D1B1F06006E7299 /* Sources */ = {
@@ -398,7 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = appBase/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stlwolf.appBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,7 +453,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = appBase/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stlwolf.appBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
