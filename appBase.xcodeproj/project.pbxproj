@@ -71,15 +71,15 @@
 		C45E6F691D1C63E000667D54 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C44957EC1D1CC7D600641924 /* Helper+Extension.swift */,
 				C45E6F6A1D1C646100667D54 /* NSObject+Extension.swift */,
-				C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */,
+				C44957EA1D1C709500641924 /* UIApplication+Extension.swift */,
 				C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */,
 				C44957E81D1C6E6700641924 /* UIColor+Extension.swift */,
-				C44957EA1D1C709500641924 /* UIApplication+Extension.swift */,
-				C44957EC1D1CC7D600641924 /* Helper+Extension.swift */,
+				C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */,
 				C44957EE1D1CCB8800641924 /* UIView+Extension.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C4D553081D1B1F06006E7299 = {
