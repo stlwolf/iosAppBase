@@ -17,6 +17,8 @@
 		C497E1061D1D24D2002161B4 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; };
 		C497E1071D1D24D2002161B4 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C49A18731D1D03AA00128D4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A18721D1D03AA00128D4B /* MainViewController.swift */; };
+		C4CA13021D1D88F4003EDC26 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA13011D1D88F4003EDC26 /* SwiftDate.framework */; };
+		C4CA13031D1D88F4003EDC26 /* SwiftDate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4CA13011D1D88F4003EDC26 /* SwiftDate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4D553151D1B1F06006E7299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D553141D1B1F06006E7299 /* AppDelegate.swift */; };
 		C4D5531A1D1B1F06006E7299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D553181D1B1F06006E7299 /* Main.storyboard */; };
 		C4D5531C1D1B1F06006E7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D5531B1D1B1F06006E7299 /* Assets.xcassets */; };
@@ -41,6 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C4CA13031D1D88F4003EDC26 /* SwiftDate.framework in Embed Frameworks */,
 				C497E1071D1D24D2002161B4 /* Chameleon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -58,6 +61,7 @@
 		C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		C497E1051D1D24D2002161B4 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		C49A18721D1D03AA00128D4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C4CA13011D1D88F4003EDC26 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
 		C4D553111D1B1F06006E7299 /* appBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D553141D1B1F06006E7299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D553191D1B1F06006E7299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CA13021D1D88F4003EDC26 /* SwiftDate.framework in Frameworks */,
 				C497E1061D1D24D2002161B4 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,10 +118,11 @@
 		C4D553081D1B1F06006E7299 = {
 			isa = PBXGroup;
 			children = (
-				C497E1051D1D24D2002161B4 /* Chameleon.framework */,
 				C4D553121D1B1F06006E7299 /* Products */,
 				C4D553131D1B1F06006E7299 /* appBase */,
 				C4D553281D1B1F06006E7299 /* appBaseTests */,
+				C497E1051D1D24D2002161B4 /* Chameleon.framework */,
+				C4CA13011D1D88F4003EDC26 /* SwiftDate.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +298,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
 			);
 			name = "Link Carthage Libraries";
 			outputPaths = (
