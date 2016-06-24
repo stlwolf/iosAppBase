@@ -103,7 +103,6 @@
 		C4D553131D1B1F06006E7299 /* appBase */ = {
 			isa = PBXGroup;
 			children = (
-				C45E6F691D1C63E000667D54 /* Extensions */,
 				C4D553361D1B202E006E7299 /* Resources */,
 				C4D553341D1B1FCF006E7299 /* Sources */,
 				C4D553371D1B2048006E7299 /* StoryBoards */,
@@ -124,6 +123,7 @@
 		C4D553341D1B1FCF006E7299 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C45E6F691D1C63E000667D54 /* Extensions */,
 				C4D553141D1B1F06006E7299 /* AppDelegate.swift */,
 				C4D553161D1B1F06006E7299 /* ViewController.swift */,
 			);
