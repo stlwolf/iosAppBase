@@ -14,6 +14,7 @@
 		C45E6F6B1D1C646100667D54 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6A1D1C646100667D54 /* NSObject+Extension.swift */; };
 		C45E6F6D1D1C65F700667D54 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */; };
 		C45E6F6F1D1C69B500667D54 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */; };
+		C47177BE1D550C0400A15842 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47177BD1D550C0400A15842 /* config.swift */; };
 		C497E1061D1D24D2002161B4 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; };
 		C497E1071D1D24D2002161B4 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C497E1051D1D24D2002161B4 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C49A18731D1D03AA00128D4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49A18721D1D03AA00128D4B /* MainViewController.swift */; };
@@ -59,6 +60,7 @@
 		C45E6F6A1D1C646100667D54 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		C45E6F6C1D1C65F700667D54 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		C45E6F6E1D1C69B500667D54 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		C47177BD1D550C0400A15842 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		C497E1051D1D24D2002161B4 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		C49A18721D1D03AA00128D4B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4CA13011D1D88F4003EDC26 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				C45E6F691D1C63E000667D54 /* Extensions */,
 				C42E1D371D1D13FC009F3105 /* ViewControllers */,
 				C4D553141D1B1F06006E7299 /* AppDelegate.swift */,
+				C47177BD1D550C0400A15842 /* config.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				C44957ED1D1CC7D600641924 /* Helper+Extension.swift in Sources */,
 				C45E6F6F1D1C69B500667D54 /* UICollectionView+Extension.swift in Sources */,
 				C44957EF1D1CCB8800641924 /* UIView+Extension.swift in Sources */,
+				C47177BE1D550C0400A15842 /* config.swift in Sources */,
 				C4D553151D1B1F06006E7299 /* AppDelegate.swift in Sources */,
 				C44957E91D1C6E6700641924 /* UIColor+Extension.swift in Sources */,
 				C45E6F6B1D1C646100667D54 /* NSObject+Extension.swift in Sources */,
