@@ -20,12 +20,12 @@ extension StoryBoardHelper where Self: UIViewController {
     //      MyViewController.instantiate("MyStoryboard")
     static func instantiate() -> Self {
         let storyBoard = UIStoryboard(name: self.className, bundle: nil)
-        return storyBoard.instantiateViewControllerWithIdentifier(self.className) as! Self
+        return storyBoard.instantiateViewController(withIdentifier: self.className) as! Self
     }
     
-    static func instantiate(storyboard: String) -> Self {
+    static func instantiate(_ storyboard: String) -> Self {
         let storyBoard = UIStoryboard(name: storyboard, bundle: nil)
-        return storyBoard.instantiateViewControllerWithIdentifier(self.className) as! Self
+        return storyBoard.instantiateViewController(withIdentifier: self.className) as! Self
     }
 }
 
@@ -41,7 +41,7 @@ extension NibHelper where Self: UIView {
     // Ex: MyView.instantiate(owner: self)
     static func instantiate() -> Self {
         let nib = UINib(nibName: self.className, bundle: nil)
-        return nib.instantiateWithOwner(nil, options: nil)[0] as! Self
+        return nib.instantiate(withOwner: nil, options: nil)[0] as! Self
     }
 }
 

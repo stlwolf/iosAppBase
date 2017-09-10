@@ -16,7 +16,7 @@ extension UIApplication {
     // Ex: UIApplication.sharedApplication().topViewController()?
     func topViewController() -> UIViewController? {
         
-        guard var topViewController = UIApplication.sharedApplication().keyWindow?.rootViewController else {
+        guard var topViewController = UIApplication.shared.keyWindow?.rootViewController else {
             return nil
         }
         

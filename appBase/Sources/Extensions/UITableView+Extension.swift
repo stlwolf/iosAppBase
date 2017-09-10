@@ -16,17 +16,17 @@ extension UITableView {
     // Ex:  tableView.registerCell(MyCell.self)
     //      tableView.registerCells([MyCell1.self, MyCell2.self])
     //      let cell = tableView.dequeueCell(MyCell.self)
-    func registerCell<T: UITableViewCell>(type: T.Type) {
+    func registerCell<T: UITableViewCell>(_ type: T.Type) {
         let className = type.className
         let nib = UINib(nibName: className, bundle: nil)
-        registerNib(nib, forCellReuseIdentifier: className)
+        register(nib, forCellReuseIdentifier: className)
     }
     
-    func registerCells<T: UITableViewCell>(types: [T.Type]) {
+    func registerCells<T: UITableViewCell>(_ types: [T.Type]) {
         types.forEach { registerCell($0) }
     }
     
-    func dequeueCell<T: UITableViewCell>(type: T.Type, indexPath: NSIndexPath) -> T {
-        return self.dequeueReusableCellWithIdentifier(type.className, forIndexPath: indexPath) as! T
+    func dequeueCell<T: UITableViewCell>(_ type: T.Type, indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: type.className, for: indexPath) as! T
     }
 }

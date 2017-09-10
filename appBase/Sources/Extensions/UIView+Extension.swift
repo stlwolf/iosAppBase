@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-enum FadeType: NSTimeInterval {
+enum FadeType: TimeInterval {
     case
-    Normal = 0.2,
-    Slow = 1.0
+    normal = 0.2,
+    slow = 1.0
 }
 
 extension UIView {
@@ -34,36 +34,36 @@ extension UIView {
     //      view.fadeIn(type: .Slow) { [weak self] in
     //          self?.someMethod()
     //         }
-    func fadeIn(type: FadeType = .Normal, completed: ( ()->() )? = nil) {
+    func fadeIn(_ type: FadeType = .normal, completed: ( ()->() )? = nil) {
         fadeIn(type.rawValue, completed)
     }
     
     /** For typical purpose, use "public func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
-    func fadeIn(duration: NSTimeInterval = FadeType.Slow.rawValue, _ completed: ( ()->() )? = nil) {
+    func fadeIn(_ duration: TimeInterval = FadeType.slow.rawValue, _ completed: ( ()->() )? = nil) {
         alpha = 0
-        hidden = false
-        UIView.animateWithDuration(duration,
+        isHidden = false
+        UIView.animate(withDuration: duration,
             animations: {
                 self.alpha = 1
-            }) { finished in
+            }, completion: { finished in
                 completed?()
-        }
+        }) 
     }
     
-    func fadeOut(type: FadeType = .Normal, completed: ( ()->() )? = nil) {
+    func fadeOut(_ type: FadeType = .normal, completed: ( ()->() )? = nil) {
         fadeOut(type.rawValue, completed)
     }
     
     /** For typical purpose, use "public func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
-    func fadeOut(duration: NSTimeInterval = FadeType.Slow.rawValue, _ completed: ( ()->() )? = nil) {
-        UIView.animateWithDuration(duration,
+    func fadeOut(_ duration: TimeInterval = FadeType.slow.rawValue, _ completed: ( ()->() )? = nil) {
+        UIView.animate(withDuration: duration,
             animations: {
                 self.alpha = 1
-            }) { [weak self] finished in
-                self?.hidden = true
+            }, completion: { [weak self] finished in
+                self?.isHidden = true
                 self?.alpha = 1
                 completed?()
-        }
+        }) 
     }
     
 }
